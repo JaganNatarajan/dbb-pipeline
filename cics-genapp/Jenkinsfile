@@ -75,10 +75,6 @@ pipeline {
                         error("DBB_URL is not defined !!!")
                     if ( env.DBB_HLQ == null )
                         error("DBB_HLQ is not defined !!!")
-                    if ( env.ARTIFACTORY_URL == null )
-                        error("ARTIFACTORY_URL is not defined !!!")
-                    if ( env.ARTIFACTORY_REPO_PATH == null )
-                        error("ARTIFACTORY_REPO_PATH is not defined !!!")
                     if ( env.UCD_BUZTOOL_PATH == null )
                         error("UCD_BUZTOOL_PATH is not defined !!!")
                     
@@ -260,7 +256,7 @@ repository=${repositoryPath}
 url=${artiUrl}
                                       """
                                 }
-                                sh "$dbbHome/bin/groovyz $dbbGroovyzOpts ${WORKSPACE}/dbb/Pipeline/CreateUCDComponentVersion/dbb-ucd-packaging.groovy --buztool ${ucdBuztool} --component ${ucdComponent} --workDir ${WORKSPACE}/BUILD-${BUILD_NUMBER}/${BUILD_OUTPUT_FOLDER} --artifactRepository ${WORKSPACE}/BUILD-${BUILD_NUMBER}/artifactoy.properties"
+                                sh "$dbbHome/bin/groovyz $dbbGroovyzOpts ${WORKSPACE}/dbb/Pipeline/CreateUCDComponentVersion/dbb-ucd-packaging.groovy --buztool ${ucdBuztool} --component ${ucdComponent} --workDir ${WORKSPACE}/BUILD-${BUILD_NUMBER}/${BUILD_OUTPUT_FOLDER} "
                             }
                         }
                     }
