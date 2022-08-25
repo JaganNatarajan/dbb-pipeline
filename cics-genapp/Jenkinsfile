@@ -150,7 +150,7 @@ pipeline {
                             cccFolder = env.CCC_FOLDER
                         }
                         idzCodeReviewFlag = env.RUN_IDZ_CODE_REVIEW && env.RUN_IDZ_CODE_REVIEW == 'true' ? true : false
-                        println "*JUX* $env.RUN_IDZ_CODE_REVIEW"
+                        println "*JUX* $env.RUN_IDZ_CODE_REVIEW  $idzCodeReviewFlag"
                         dbbHome = env.DBB_HOME
                         dbbUrl = env.DBB_URL
                         dbbHlq = env.DBB_HLQ
