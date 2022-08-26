@@ -5,7 +5,7 @@ def linuxAgent = 'master'
 // GIT repositories
 def srcGitRepo =  null
 def srcGitBranch = null
-# -- Jagan -- change the zappbuild
+// -- Jagan -- change the zappbuild
 #def zAppBuildGitRepo = 'https://github.com/IBM/dbb-zappbuild.git'
 def zAppBuildGitRepo = 'https://github.com/JaganNatarajan/dbb-zappbuild.git'
 def zAppBuildGitBranch = 'main'
