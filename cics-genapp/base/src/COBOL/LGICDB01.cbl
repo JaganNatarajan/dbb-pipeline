@@ -18,7 +18,7 @@
       * Select customer details from DB2 table                         *
       *                                                                *
       * TEST: 02                                                       *
-      *   Jagan Testing                                                *
+      *   Jagan testing                                                *
       ******************************************************************
        IDENTIFICATION DIVISION.
        PROGRAM-ID. LGICDB01.
